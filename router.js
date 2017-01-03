@@ -12,7 +12,7 @@ module.exports = function(app) {
     res.send({hi: 'there'});
   });
 
-  app.post('/sigin', requireSignin, authentication.signin)
+  app.post('/signin', requireSignin, authentication.signin);
 
   app.post('/signup', authentication.signup);
 
